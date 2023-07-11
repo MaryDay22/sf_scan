@@ -18,6 +18,7 @@ export const useForm = () => {
     startDate: "",
     endDate: "",
     maxFullness: false,
+    inBusinessContext: true,
     mainRole: true,
     onlyWithRiskFactors: false,
     includeTechNews: true,
