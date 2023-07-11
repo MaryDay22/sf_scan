@@ -18,7 +18,7 @@ export const useForm = () => {
     startDate: "",
     endDate: "",
     maxFullness: false,
-    inBusinessContext: true,
+    inBusinessContext: null,
     mainRole: true,
     onlyWithRiskFactors: false,
     includeTechNews: true,
@@ -139,7 +139,7 @@ export const useForm = () => {
     }));
   };
 
-	return {
+  return {
     formData,
     handleSubmit,
     handleChange,
