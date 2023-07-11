@@ -6,6 +6,7 @@ export const pricing = [
     {
         tariff: 'Beginer',
         price: '799 ₽',
+        oldprice: '1200 ₽',
         credit: 'или 150 ₽/мес. при рассрочке на 24 мес.',
         image: idea,
         current:true,
@@ -15,6 +16,7 @@ export const pricing = [
     {
         tariff: 'Pro',
         price: '1 299 ₽',
+        oldprice: '2600 ₽',
         credit: 'или 279 ₽/мес. при рассрочке на 24 мес.',
         image: hawkeye,
         className:css.second_card,
@@ -23,6 +25,7 @@ export const pricing = [
     {
         tariff: 'Business',
         price: '2 379 ₽',
+        oldprice: '3700 ₽',
         credit: '_',
         image: laptop,
         className:css.third_card,

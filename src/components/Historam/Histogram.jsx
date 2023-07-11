@@ -2,11 +2,17 @@ import css from "./Historgam.module.css";
 import Arrow from "../../ui/Arrow/arrow";
 import { HistogramResult } from "../../ui/HistogramResult/HistogramResult";
 import { useForm } from "../../api/hooks/useForm";
+import NotFound from "../../pages/NotFound/NotFound";
 
 const Historgam = () => {
   const data = JSON.parse(sessionStorage.getItem(process.env.REACT_APP_LS_KEY_HISTOGRAMS));
-  const totalDocuments = data.data[0];
-  const riskFactors = data.data[1];
+  const totalDocuments = data?.data[0];
+  const riskFactors = data?.data[1];
+
+	if (!totalDocuments || !riskFactors) {
+    return <NotFound />; 
+  }
+
 
   const renderData = totalDocuments.data.map((el, i) => (
     <HistogramResult
